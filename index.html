@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marwadi University</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://source.unsplash.com/1600x900/?university') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 30px;
+        }
+        .section-title {
+            position: relative;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: #0d6efd;
+        }
+        .card {
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .gallery-img {
+            height: 200px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .recruiter-logo {
+            height: 80px;
+            object-fit: contain;
+            filter: grayscale(100%);
+            transition: all 0.3s;
+            padding: 10px;
+        }
+        .recruiter-logo:hover {
+            filter: none;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Marwadi University</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#vision">Vision</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mission">Mission</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#outcomes">Outcomes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#recruiters">Recruiters</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Welcome to Marwadi University</h1>
+            <p class="lead">Excellence in Education, Research, and Innovation</p>
+            <a href="#courses" class="btn btn-primary btn-lg mt-3">Explore Programs</a>
+        </div>
+    </header>
+
+    <!-- Vision Section -->
+    <section id="vision" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">Our Vision</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-eye-fill display-4 text-primary mb-3"></i>
+                            <p class="card-text lead">To be a globally recognized institution of higher learning, committed to academic excellence, innovation, and societal transformation through quality education and research.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title">Our Mission</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-mortarboard-fill text-primary display-4 mb-3"></i>
+                            <h5 class="card-title">Quality Education</h5>
+                            <p class="card-text">To provide high-quality education that prepares students for successful careers and lifelong learning.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-lightbulb-fill text-primary display-4 mb-3"></i>
+                            <h5 class="card-title">Research & Innovation</h5>
+                            <p class="card-text">To foster a culture of research, innovation, and entrepreneurship among students and faculty.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-people-fill text-primary display-4 mb-3"></i>
+                            <h5 class="card-title">Community Engagement</h5>
+                            <p class="card-text">To engage with the community and industry to address societal challenges through education and research.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Outcomes -->
+    <section id="outcomes" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">Program Specific Outcomes</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Engineering Graduates will be able to:</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Apply knowledge of mathematics, science, and engineering principles</li>
+                                <li class="list-group-item">Design and conduct experiments, analyze and interpret data</li>
+                                <li class="list-group-item">Design systems to meet desired needs within realistic constraints</li>
+                                <li class="list-group-item">Function effectively on multidisciplinary teams</li>
+                                <li class="list-group-item">Identify, formulate, and solve engineering problems</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Business Graduates will be able to:</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Apply business concepts and theories to solve real-world problems</li>
+                                <li class="list-group-item">Demonstrate effective communication and teamwork skills</li>
+                                <li class="list-group-item">Analyze business data and make informed decisions</li>
+                                <li class="list-group-item">Understand global business environments and practices</li>
+                                <li class="list-group-item">Apply ethical reasoning in business decision-making</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Offered -->
+    <section id="courses" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title">Courses Offered</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Engineering</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-primary"></i> Computer Science & Engineering</li>
+                                <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-primary"></i> Mechanical Engineering</li>
+                                <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-primary"></i> Electrical Engineering</li>
+                                <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-primary"></i> Civil Engineering</li>
+                                <li><i class="bi bi-arrow-right-circle-fill text-primary"></i> Electronics & Communication</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Business & Management</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-primary"></i> Bachelor of Business Administration</li>
+                                <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-primary"></i> Master of Business Administration</li>
+                                <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-primary"></i> Finance & Accounting</li>
+                                <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-primary"></i> Marketing Management</li>
+                                <li><i class="bi bi-arrow-right-circle-fill text-primary"></i> Human Resource Management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0">Computer Applications</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-primary"></i> Bachelor of Computer Applications</li>
+                                <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-primary"></i> Master of Computer Applications</li>
+                                <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-primary"></i> Data Science</li>
+                                <li class="mb-2"><i class="bi bi-arrow-right-circle-fill text-primary"></i> Artificial Intelligence</li>
+                                <li><i class="bi bi-arrow-right-circle-fill text-primary"></i> Cyber Security</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">Campus Life</h2>
+            <div class="row g-3">
+                <div class="col-md-4 col-6">
+                    <img src="../Images/image8.jpeg" alt="Campus View" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="https://source.unsplash.com/1200x800/?university-campus">
+                </div>
+                <div class="col-md-4 col-6">
+                    <img src="../Images//image4.jpeg" alt="Graduation" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="https://source.unsplash.com/1200x800/?graduation">
+                </div>
+                <div class="col-md-4 col-6">
+                    <img src="../Images/image3.jpeg" alt="Classroom" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="https://source.unsplash.com/1200x800/?classroom">
+                </div>
+                <div class="col-md-4 col-6">
+                    <img src="../Images/image1.jpeg" alt="Library" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="https://source.unsplash.com/1200x800/?library">
+                </div>
+                <div class="col-md-4 col-6">
+                    <img src="../Images/image7.jpeg" alt="Laboratory" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="https://source.unsplash.com/1200x800/?laboratory">
+                </div>
+                <div class="col-md-4 col-6">
+                    <img src="../Images/image9.jpeg" alt="Sports" class="img-fluid rounded gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal" data-bs-img="https://source.unsplash.com/1200x800/?sports">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Recruiters -->
+    <section id="recruiters" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title">Our Top Recruiters</h2>
+            <div class="row align-items-center justify-content-center g-4">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <img src="https://logo.clearbit.com/google.com" alt="Google" class="img-fluid recruiter-logo">
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <img src="https://logo.clearbit.com/microsoft.com" alt="Microsoft" class="img-fluid recruiter-logo">
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <img src="https://logo.clearbit.com/amazon.com" alt="Amazon" class="img-fluid recruiter-logo">
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <img src="https://logo.clearbit.com/infosys.com" alt="Infosys" class="img-fluid recruiter-logo">
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <img src="https://logo.clearbit.com/tcs.com" alt="TCS" class="img-fluid recruiter-logo">
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <img src="https://logo.clearbit.com/ibm.com" alt="IBM" class="img-fluid recruiter-logo">
+                </div>
+            </div>
+        </div>                        
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Contact Us</h5>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i>Rajkot-Morbi Road, Rajkot 360003 Gujarat, India</p>
+                    <p><i class="bi bi-telephone-fill me-2"></i> +258 84 40 1249</p>
+                    <p><i class="bi bi-envelope-fill me-2"></i> jasseyur@gmail.com</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Admissions</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Academics</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Research</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Campus Life</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-linkedin fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Marwadi University. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Gallery Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="" alt="Gallery Image" class="img-fluid" id="galleryImage">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Gallery modal functionality
+        const galleryModal = document.getElementById('galleryModal');
+        if (galleryModal) {
+            galleryModal.addEventListener('show.bs.modal', function (event) {
+                const button = event.relatedTarget;
+                const imgSrc = button.getAttribute('data-bs-img');
+                const modalImage = galleryModal.querySelector('#galleryImage');
+                modalImage.src = imgSrc;
+            });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Navbar background change on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-primary');
+                navbar.classList.remove('bg-transparent');
+            } else {
+                navbar.classList.add('bg-primary');
+            }
+        });
+    </script>
+</body>
+</html>
